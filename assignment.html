@@ -510,8 +510,8 @@ peaks_w_motif_chr1 &lt;- peak_centers_chr1[overlapsAny(peak_centers_chr1,moi_chr
 length(peaks_w_motif_chr1)/length(motif_genome[[1]])</code></pre>
 <pre><code>## [1] 0.001824433</code></pre>
 <p>of the 42753 motif instances, 0.001824433 (0.18%) overlap a peak</p>
-<p>This part of the code isn’t correct, left it in to discuss on friday
-:)</p>
+<p>This following part of the code isn’t correct, left it in to discuss
+on friday :)</p>
 <pre class="r"><code># on whole genome,something doesn&#39;t add up here,if we could talk about it on friday :) For the correction, please refer to the version above 
 motif_genome_all&lt;- matchMotifs(motif, subject=genome, out=&quot;positions&quot;)
 motif_genome_all &lt;- motif_genome_all[[1]]
@@ -523,9 +523,6 @@ table(peaks_w_motif)</code></pre>
 ##  1943  1612</code></pre>
 <pre class="r"><code>length(motif_genome) # it comes out as 1, SHOULD NOT BE LIKE THIS, lookked at the motif and there are 41950</code></pre>
 <pre><code>## [1] 1</code></pre>
-<pre class="r"><code>table(peaks_w_motif)[2]/length(motif_genome)</code></pre>
-<pre><code>## TRUE 
-## 1612</code></pre>
 
 
 
